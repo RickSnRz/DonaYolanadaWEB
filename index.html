@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><img src="img/DOÑA YOLANDA_COMPLETO-38.png" alt=""></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a id="no-hover" href="#Inicio">INICIO</a></li>
+                    <li><a id="no-hover" href="#CATALOGO">CATALOGO</a></li>
+                    <li><a id="no-hover" href="#NAVIDEÑO">NAVIDEÑO</a></li>
+                    <li><a id="no-hover" href="#contactos">CONTACTENOS</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()"><i class="fa-solid fa-bars"></i></div>
+        </header>
+    </div>
+
+    <section id="Inicio" class="Inicio">
+        <div class="contenedor-banner">
+            <div class="col">
+                <img src="img/DOÑA YOLANDA_COMPLETO-38.png">
+            </div>
+            <div class="col">
+                <h1>BIENVENIDOS A DOÑA YOLANDA</h1>
+                <h4>Nosotros somos un negocio de alquileres de habitaciones, nuestros principal enfoque es el hospedaje 
+                    contamos con diversas habitaciones así como una cierta variedad de tarifas tanto como para estudiantes,
+                    trabajadores o personas que busquen un lugar donde vivir.</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <div class="contenedor-servicios">
+            <h2>INFORMACION</h2>
+            <div class="galeria">
+                <div class="servicio">
+                    <h3>DELIVERY</h3>
+                    <img src="img/story-27.png" alt="">
+                    <p>Te ofrecemos todos los servicios
+                    basicos como luz, agua y internet 
+                    durante todo el dia.
+                    </p>
+                </div>
+                <div class="servicio">
+                    <h3>EVENTOS</h3>
+                    <img src="img/story-29.png" alt="">
+                    <p>Nosotros nos encargamos de la limpieza
+                    del exterior del dormitorio.
+                    </p>
+                </div>
+                <div class="servicio">
+                    <h3>MEDIO DE PAGO</h3>
+                    <img src="img/story-30.png" alt="">
+                    <p>Nosotros nos encargaremos de soluccionar
+                        problemas que pueden presentarce posterior
+                        a la entrega del cuarto esto aplicara en los 
+                        primeros meses.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor-carrusel">
+        <h2>AGRADECIMIENTOS</h2>
+    <div class="carrusel">
+        <div class="atras">
+            <img id="atras" src="img/atras.svg" alt="atras" loading="lazy">
+        </div>
+
+        <div class="imagenes">
+            <div id="img">
+                <img class="img" src="img/cliente1.jpg" alt="imagen 1" loading="lazy">
+            </div>
+            
+            <div id="texto" class="texto">
+                <h3>Cliente 01</h3>
+                <p>Este es un espacio donde damos gracias a todos nuestros clientes que nos prefieren estamos para serviles.
+                </p>
+            </div>
+        </div>
+
+        <div class="adelante" id="adelante">
+            <img src="img/adelante.svg" alt="adelante" loading="lazy">
+        </div>
+    </div>
+
+    <div class="puntos" id="puntos"></div>
+
+    </section>
+
+    <section id="contactos" class="contactos">
+        <div class="contenedor-contactos">
+            <h2>CONTACTENOS</h2>
+            <div class="fila">
+                <div class="col">
+                    <form action="https://formsubmit.co/alquileresrame@gmail.com" method="POST">
+                        <input type="text" placeholder="Tú Nombre" name="Nombre" required>
+                        <input type="text" placeholder="Numero Telefonico" name="Telefono" required>
+                        <input type="email" placeholder="Dirección de correo" name="Correo" required>
+                        <input type="text" placeholder="Tema" name="Tema" required>
+                        <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <button>
+                            <span class="glowing-word">ENVIAR MENSAJE</span><span class="faulty-letter"><i class="fa-solid fa-paper-plane"></i></span>
+                        </button>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/#contactos">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <label id="a">Las Hormigas Mz A Lt 24, La Molina</label>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <label id="b"> Llamanos: (01)3484414</label>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <label id="c">Email: alquileresrame@gmail.com</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#Inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+                <a href="#" id="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" id="GITHUB"><i class="fa-brands fa-github"></i></a>
+                <a href="#" id="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" id="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
