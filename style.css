@@ -689,10 +689,10 @@ footer .arriba:hover {
     nav.responsive{
         display: block;
         position: absolute;
-        right: 0;
-        top: 75px;
-        background-color: rgba(245, 245, 220, 1);
-        width: 180px;
+        right: 50%;
+        top: 60px;
+        background-color: rgba(245, 245, 220, 0.5);
+        width: 220px;
     }
     nav.responsive ul{
         display: block !important;
@@ -703,13 +703,23 @@ footer .arriba:hover {
     }
 }
 @media screen and (max-width: 950px) {
+    .contenedor-header{
+        background: rgb(91,181,106,0.3);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .contenedor-header .logo{
+        display: none;
+    }
     .contenedor-carrusel {
         padding: 70px 5vw; /* Ajusta el padding en pantallas más pequeñas */
     }
     .contenedor-carrusel .carrusel{
-        height: 60%;
+        height: 50%;
     }
-
     .contenedor-carrusel .img {
         max-height: 400px; /* Ajusta el tamaño máximo de la imagen en pantallas más pequeñas */
         max-width: 100%; /* Ajusta el tamaño máximo de la imagen en pantallas más pequeñas */
@@ -717,7 +727,7 @@ footer .arriba:hover {
 
     .contenedor-carrusel .imagenes .texto {
         width: 50%; /* Ajuste para pantallas más pequeñas */
-        height: 60px; /* Ajuste para pantallas más pequeñas */
+        height: 6%; /* Ajuste para pantallas más pequeñas */
         font-size: 14px; /* Ajuste para pantallas más pequeñas */
     }
     .contenedor-carrusel .imagenes:hover .texto {
