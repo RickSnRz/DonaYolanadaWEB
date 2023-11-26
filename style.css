@@ -81,7 +81,7 @@ html{
     position: relative;
     max-width: 640px;
     height: 370px;
-    margin: 10px;
+    margin: 15px;
     cursor: pointer;
 }
 .Inicio .contenedor-banner img{
@@ -104,8 +104,6 @@ html{
 }
 
 .servicios{
-    background: url(img/fondo5.png) no-repeat center center #cfd8dc;
-    background-size: 103% 100%;
     color: #000000;
     padding: 50px 20px;
     height: 90vh;
@@ -114,7 +112,7 @@ html{
     justify-content: center;
 }
 .servicios .contenedor-servicios{
-    max-width: 1100px;
+    max-width: 100%;
     margin: auto;
     background: rgb(91,181,106,0.6);
 }
@@ -152,17 +150,19 @@ html{
     width: 120px;
 }
 .servicios .galeria .servicio p{
-    font-size: 17px;
+    font-size: 15px;
     font-family: 'Tiro Bangla';
     text-align: center;
     padding: 20px 0;
+    margin: 30px;
     margin-bottom: 30px;
 }
 .servicios .galeria .servicio:hover{
     box-shadow: 0px 0px 40px rgb(7, 3, 0);
 }
 .contenedor-carrusel{
-    background: url(img/fondo5.png) no-repeat center center #cfd8dc;
+    background: url(img/fondo2.png) no-repeat center center #cfd8dc;
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -188,6 +188,7 @@ html{
     overflow: hidden;
     width: 100%;
     height: 100vh;
+    margin-left: 1%;
 }
 
 .contenedor-carrusel .imagenes{
@@ -287,7 +288,7 @@ html{
 }
 
 .contactos{
-    background: url(img/fondo2.png) no-repeat center center;
+    background: rgb(91,181,106,0.6);
     background-size: 100% 100%;
     color: #fff;
     padding: 50px 0;
@@ -679,7 +680,7 @@ footer .arriba:hover {
     box-shadow: 0 0 15px #d35400;
     text-shadow: 0 0 15px #d35400;
 }
-@media screen and (max-width:980px){
+@media screen and (max-width:950px){
     nav{
         display: none;
     }
@@ -689,9 +690,9 @@ footer .arriba:hover {
     nav.responsive{
         display: block;
         position: absolute;
-        right: 50%;
+        right: auto;
         top: 60px;
-        background-color: rgba(245, 245, 220, 0.5);
+        background-color: rgba(245, 245, 220, 1);
         width: 220px;
     }
     nav.responsive ul{
@@ -759,6 +760,14 @@ footer .arriba:hover {
     }
 }
 @media screen and (max-width: 430px){
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: auto;
+        top: 60px;
+        background-color: rgba(245, 245, 220, 1);
+        width: 220px;
+    }
    .Inicio{
     width: auto;
    }
