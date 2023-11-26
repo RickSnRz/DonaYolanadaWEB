@@ -16,7 +16,7 @@ html{
 }
 
 .contenedor-header{
-    background: rgba(245, 245, 220, 1);
+    background: rgb(91,181,106,0.9);
     position: fixed;
     width: 100%;
     top: 0;
@@ -109,13 +109,14 @@ html{
     color: #000000;
     padding: 50px 20px;
     height: 90vh;
-    display: flex;
+    display: contents;
     align-items: center;
     justify-content: center;
 }
 .servicios .contenedor-servicios{
     max-width: 1100px;
     margin: auto;
+    background: rgb(91,181,106,0.6);
 }
 .servicios h2{
     font-size: 48px;
@@ -132,8 +133,8 @@ html{
 }
 .servicios .galeria .servicio{
     position: relative;
-    max-width: 340px;
-    height: 370px;
+    max-width: 370px;
+    height: 420px;
     margin: 10px;
     cursor: pointer;
     background: rgb(245, 239, 219, 1);
@@ -171,6 +172,15 @@ html{
     height: 90vh;
 }
 
+.contenedor-carrusel h2{
+    font-size: 48px;
+    font-family: 'Kiwi Maru';
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
 .contenedor-carrusel .carrusel{
     display: flex;
     align-items: center;
@@ -189,8 +199,8 @@ html{
 
 .contenedor-carrusel .img{
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
-    height: 576px;
-    width: 1134px;
+    max-height: 576px; /* Cambié width a max-height */
+    max-width: 1134px; /* Cambié height a max-width */
     border-radius: 15px ;
     margin: 5px;
     object-fit: cover;
@@ -579,6 +589,11 @@ html{
         opacity: 1;
     }
 }
+@media only screen and (max-width: 600px) {
+    .contacto button {
+        font-size: 1em;
+    }
+}
 footer{
     background-color: #252A2E;
     color: #fff;
@@ -663,4 +678,83 @@ footer .arriba:hover {
     color: #ffa502;
     box-shadow: 0 0 15px #d35400;
     text-shadow: 0 0 15px #d35400;
+}
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: rgba(245, 245, 220, 1);
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width: 950px) {
+    .contenedor-carrusel {
+        padding: 70px 5vw; /* Ajusta el padding en pantallas más pequeñas */
+    }
+    .contenedor-carrusel .carrusel{
+        height: 60%;
+    }
+
+    .contenedor-carrusel .img {
+        max-height: 400px; /* Ajusta el tamaño máximo de la imagen en pantallas más pequeñas */
+        max-width: 100%; /* Ajusta el tamaño máximo de la imagen en pantallas más pequeñas */
+    }
+
+    .contenedor-carrusel .imagenes .texto {
+        width: 50%; /* Ajuste para pantallas más pequeñas */
+        height: 60px; /* Ajuste para pantallas más pequeñas */
+        font-size: 14px; /* Ajuste para pantallas más pequeñas */
+    }
+    .contenedor-carrusel .imagenes:hover .texto {
+        transition: none; /* Desactiva la transición en pantallas más pequeñas */
+        transform: translateY(0);
+        height: auto;
+        background-color: rgba(63, 106, 138, 0.71);
+    }
+
+    .contenedor-carrusel .imagenes:hover .texto p {
+        transition: none; /* Desactiva la transición en pantallas más pequeñas */
+        font-size: 23px;
+        font-weight: 300;
+        text-shadow: 0px 0px 10px #000000;
+    }
+
+    .puntos {
+        
+        display: flex; /* Mantén el display flex en pantallas más pequeñas */
+        justify-content: center; /* Centra los elementos horizontalmente en el eje principal */
+        align-items: center; /* Centra los elementos verticalmente en el eje transversal */
+    }
+
+    .contactos .fila{
+        display: block;
+    }
+    .contactos .fila .col{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 430px){
+   .Inicio{
+    width: auto;
+   }
+
+.info{
+    width: 300px;
+}
+
 }
