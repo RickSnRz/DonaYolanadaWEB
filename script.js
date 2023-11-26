@@ -1,22 +1,17 @@
 let imagenes = [
     {
-        "url": "img/cliente1.jpg",
-        "nombre": "Cliente 01",
-        "descripcion": "Este es un espacio donde damos gracias a todos nuestros clientes que nos prefieren estamos para serviles."
+        "url": "img/Pollada.jpg",
+        "nombre": "Pollada Especial",
+        "descripcion": "1/4 pollada especial, papa sancochada, aji, vinagreta."
 
     },
     {
-        "url": "img/cliente2.jpg",
-        "nombre": "Cliente 02",
-        "descripcion": "Este es un espacio donde damos gracias a todos nuestros clientes que nos prefieren estamos para serviles."
+        "url": "img/Chuletada.jpg",
+        "nombre": "Chuletada Especial",
+        "descripcion": "1 Chuleta especial, papa sancochada, aji, vinagreta."
 
     },
-    {
-        "url": "img/cliente3.jpg",
-        "nombre": "Cliente 03",
-        "descripcion": "Este es un espacio donde damos gracias a todos nuestros clientes que nos prefieren estamos para serviles."
-
-    },
+    
 ]
 
 

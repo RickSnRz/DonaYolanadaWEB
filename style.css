@@ -198,7 +198,7 @@ html{
     justify-content: end;
 }
 
-.contenedor-carrusel .img{
+.contenedor-carrusel img{
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
     max-height: 576px; /* Cambié width a max-height */
     max-width: 1134px; /* Cambié height a max-width */
@@ -244,19 +244,21 @@ html{
     transition: 1s;
 }
 
-.contenedor-carrusel .imagenes:hover .texto{
-    transition: height 1s, transform 1s, background-color 1s;
-    transform: translateY(-150px);
-    height: 300px;
-    background-color: rgba(63, 106, 138, 0.71);
-}
+@media screen and (min-width: 951px) {
+    /* Estilos específicos para pantallas más grandes */
+    .contenedor-carrusel .imagenes:hover .texto {
+        transition: height 1s, transform 1s, background-color 1s;
+        transform: translateY(-150px);
+        height: 300px;
+        background-color: rgba(63, 106, 138, 0.71);
+    }
 
-.contenedor-carrusel .imagenes:hover .texto p{
-    transition: font-size 0s .2s linear;
-    font-size: 23px;
-    font-weight: 300;
-
-    text-shadow: 0px 0px 10px #000000;
+    .contenedor-carrusel .imagenes:hover .texto p {
+        transition: font-size 0s .2s linear;
+        font-size: 23px;
+        font-weight: 300;
+        text-shadow: 0px 0px 10px #000000;
+    }
 }
 .contenedor-carrusel h2{
     font-size: 48px;
@@ -686,11 +688,15 @@ footer .arriba:hover {
     }
     .nav-responsive{
         display: block;
+        float: right;
+    }
+    .contenedor-header header {
+        flex-direction: row-reverse;
     }
     nav.responsive{
         display: block;
         position: absolute;
-        right: auto;
+        right: 0;
         top: 60px;
         background-color: rgba(245, 245, 220, 1);
         width: 220px;
@@ -702,8 +708,19 @@ footer .arriba:hover {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+   
+#no-hover {
+    color: #000000;
+    text-decoration: none;
+    border: none;
+}
 }
 @media screen and (max-width: 950px) {
+    .Inicio .contenedor-banner .col h4 {
+        font-size: 24px;
+        font-weight: normal;
+        margin: auto;
+    }
     .contenedor-header{
         background: rgb(91,181,106,0.3);
         position: fixed;
@@ -731,18 +748,16 @@ footer .arriba:hover {
         height: 6%; /* Ajuste para pantallas más pequeñas */
         font-size: 14px; /* Ajuste para pantallas más pequeñas */
     }
-    .contenedor-carrusel .imagenes:hover .texto {
-        transition: none; /* Desactiva la transición en pantallas más pequeñas */
-        transform: translateY(0);
-        height: auto;
-        background-color: rgba(63, 106, 138, 0.71);
+    
+    #texto h3{
+        color: #000000;
+        text-decoration: none;
+        border: none;
     }
-
-    .contenedor-carrusel .imagenes:hover .texto p {
-        transition: none; /* Desactiva la transición en pantallas más pequeñas */
-        font-size: 23px;
-        font-weight: 300;
-        text-shadow: 0px 0px 10px #000000;
+    #texto p{
+        color: #000000;
+        text-decoration: none;
+        border: none;
     }
 
     .puntos {
@@ -760,17 +775,21 @@ footer .arriba:hover {
     }
 }
 @media screen and (max-width: 430px){
-    nav.responsive{
-        display: block;
-        position: absolute;
-        right: auto;
-        top: 60px;
-        background-color: rgba(245, 245, 220, 1);
-        width: 220px;
+    .nav-responsive{
+        background-color: #252A2E;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
     }
    .Inicio{
     width: auto;
    }
+   .Inicio .contenedor-banner .col h4 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: auto;
+}
 
 .info{
     width: 300px;
