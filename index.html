@@ -22,7 +22,7 @@
                 <ul>
                     <li><a id="no-hover" href="#Inicio">INICIO</a></li>
                     <li><a id="no-hover" href="#CATALOGO">CATALOGO</a></li>
-                    <li><a id="no-hover" href="#NAVIDEÑO">NAVIDEÑO</a></li>
+                    <li><a id="no-hover" href="navidad.html">NAVIDEÑO</a></li>
                     <li><a id="no-hover" href="#contactos">CONTACTENOS</a></li>
                 </ul>
             </nav>
@@ -112,7 +112,7 @@
             <h2>CONTACTENOS</h2>
             <div class="fila">
                 <div class="col">
-                    <form action="https://formsubmit.co/alquileresrame@gmail.com" method="POST">
+                    <form action="php/Cotizacion.php" method="POST">
                         <input type="text" placeholder="Tú Nombre" name="Nombre" required>
                         <input type="text" placeholder="Numero Telefonico" name="Telefono" required>
                         <input type="email" placeholder="Dirección de correo" name="Correo" required>
@@ -122,8 +122,6 @@
                             <span class="glowing-word">ENVIAR MENSAJE</span><span class="faulty-letter"><i
                                     class="fa-solid fa-paper-plane"></i></span>
                         </button>
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/#contactos">
-                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
                 <div class="col">

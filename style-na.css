@@ -1,0 +1,72 @@
+@import url('https://fonts.cdnfonts.com/css/bariol');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Kiwi+Maru&family=Lobster+Two&family=Righteous&family=Tiro+Bangla&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --glow-color: hsl(30, 100%, 50%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'bariol';
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contenedor-header {
+    background: rgba(240, 3, 43, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header {
+    max-width: 1900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header .logo img {
+    width: 80px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    font-size: 25px;
+}
+
+.contenedor-header header nav ul li a {
+    text-align: none;
+    color: #333333;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contenedor-header header nav ul li a:hover {
+    color: #ff9999;
+}
+
+.nav-responsive {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
