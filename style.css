@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
-    --glow-color: hsl(30, 100%, 50%);
+    --glow-color: hsl(210, 8%, 17%);
 }
 
 * {
@@ -398,18 +398,18 @@ html {
     width: 100%;
     padding: 18px;
     margin-bottom: 20px;
-    background-color: #252A2E;
+    background-color: #f6f2e9;
     outline: none;
-    border: 1px solid #ffa502;
+    border-bottom: 1px solid #252A2E;
     color: #fff;
     font-size: 18px;
     box-sizing: border-box;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px #ffa502;
+    box-shadow: 0px 0px 10px 0px #252A2E;
 }
 
 .contactos .col input::placeholder {
-    color: #ffa502;
+    color: #252A2E;
     position: absolute;
     top: 20px;
     left: 8px;
@@ -420,7 +420,7 @@ html {
 }
 
 .contactos .col textarea::placeholder {
-    color: #ffa502;
+    color: #252A2E;
     position: absolute;
     top: 20px;
     left: 8px;
@@ -431,23 +431,23 @@ html {
 }
 
 .contactos .col input:focus {
-    box-shadow: 0px 0px 30px #ffa502;
+    box-shadow: 0px 0px 30px #252A2E;
 }
 
 .contactos .col textarea:focus {
-    box-shadow: 0px 0px 30px #ffa502;
+    box-shadow: 0px 0px 30px #252A2E;
 }
 
 .contactos .col input:focus::placeholder {
     top: -20px;
     font-size: 12px;
-    color: #ffa502;
+    color: #252A2E;
 }
 
 .contactos .col textarea:focus::placeholder {
     top: -20px;
     font-size: 12px;
-    color: #ffa502
+    color: #252A2E;
 }
 
 .contactos button {
@@ -522,7 +522,7 @@ html {
 }
 
 .contactos button:hover {
-    color: rgba(0, 0, 0, 0.8);
+    color: #f6f2e9;
     text-shadow: none;
     animation: none;
 }

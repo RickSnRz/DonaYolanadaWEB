@@ -15,25 +15,26 @@ try {
     $mail->isSMTP();                           // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';      // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                  // Enable SMTP authentication
-    $mail->Username   = 'rickx213@gmail.com'; // SMTP username
-    $mail->Password   = 'ilqdcoxbkynxiecg';   // SMTP password
+    $mail->Username   = 'ebenavente@donayolanda.com'; // SMTP username
+    $mail->Password   = 'yivvnricksppamat';   // SMTP password
     $mail->SMTPSecure = 'tls';                 // Enable TLS encryption
     $mail->Port       = 587;                   // TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     // Recipients
-    $mail->setFrom("rickx213@gmail.com", "Asegurate Aqui");
-    $mail->addAddress('rickx213@gmail.com'); // Add a recipient
+    $mail->setFrom("ebenavente@donayolanda.com", "Cotizaciones Dona Yolanda");
+    $mail->addAddress('ebenavente@donayolanda.com'); // Add a recipient
 
     // Content
     $mail->isHTML(true);                 // Set email format to HTML
-    $mail->Subject = $_POST['Tema'];
+    $mail->Subject = "Cotizacion";
     
     // Construye el cuerpo del mensaje usando los campos del formulario
     $mensaje = "Nombre: " . $_POST['Nombre'] . "<br>";
     $mensaje .= "Número Telefónico: " . $_POST['Telefono'] . "<br>";
-    $mensaje .= "Correo Electrónico: " . $_POST['Correo'] . "<br><br>";
+    $mensaje .= "Correo Electrónico: " . $_POST['Correo'] . "<br>";
+    $mensaje .= "DNI: ". $_POST['DNI']."<br><br>";
     $mensaje .= "Mensaje: " . $_POST['Mensaje'];
-
+    
     $mail->Body = $mensaje;
 
     // Agregar adjunto si se ha subido un archivo
