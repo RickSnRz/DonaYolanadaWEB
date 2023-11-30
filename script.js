@@ -1,12 +1,12 @@
 let imagenes = [
   {
-    "url": "img/Pollada.jpg",
+    "url": "img/Pollada.webp",
     "nombre": "Pollada Especial",
     "descripcion": "1/4 pollada especial, papa sancochada, aji, vinagreta."
 
   },
   {
-    "url": "img/Chuletada.jpg",
+    "url": "img/Chuletada.webp",
     "nombre": "Chuletada Especial",
     "descripcion": "1 Chuleta especial, papa sancochada, aji, vinagreta."
 
