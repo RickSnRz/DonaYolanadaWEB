@@ -18,7 +18,7 @@ html {
 }
 
 .contenedor-header {
-    background: rgba(240, 3, 43, 0.9);
+    background: rgba(240, 3, 43, 0.7);
     position: fixed;
     width: 100%;
     top: 0;
@@ -37,8 +37,8 @@ html {
 
 .contenedor-header header .logo img {
     width: 80px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .contenedor-header header ul {
@@ -50,7 +50,7 @@ html {
 
 .contenedor-header header nav ul li a {
     text-align: none;
-    color: #333333;
+    color: #000000;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
@@ -69,4 +69,124 @@ html {
     border-radius: 5px;
     cursor: pointer;
     display: none;
+}
+
+.Inicio {
+    background: url(../img/rojo2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: #050101;
+    display: flex;
+}
+
+.Inicio .contenedor-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.Inicio .contenedor-banner .col {
+    position: relative;
+    max-width: 640px;
+    height: 370px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.Inicio .contenedor-banner img {
+    margin-top: 40px;
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+}
+
+.Inicio .contenedor-banner .col h1 {
+    margin-top: 40px;
+    font-size: 45px;
+    font-family: 'Inika';
+    font-weight: bolder;
+    width: auto;
+}
+
+.Inicio .contenedor-banner .col h4 {
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.separador{
+    background: url(../img/separador.png) no-repeat center center;
+    background-size: cover;
+    height: 5vh;
+    color: #050101;
+    display: flex;
+}
+
+.servicios {
+    color: #000000;
+    padding: 50px 20px;
+    height: 100vh;
+    display: contents;
+    align-items: center;
+    justify-content: center;
+}
+
+.servicios .contenedor-servicios {
+    max-width: 100%;
+    margin: auto;
+    background:  url(../img/blanco.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.servicios h2 {
+    font-size: 48px;
+    font-family: 'Kiwi Maru';
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.servicios .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicios .galeria .servicio {
+    position: relative;
+    max-width: 370px;
+    height: 420px;
+    margin: 10px;
+    cursor: pointer;
+    background: rgb(245, 239, 219, 1);
+}
+
+.servicios .galeria .servicio h3 {
+    font-size: 23px;
+    font-family: 'Kiwi Maru';
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.servicios .galeria .servicio img {
+    margin: auto;
+    display: block;
+    width: 120px;
+}
+
+.servicios .galeria .servicio p {
+    font-size: 15px;
+    font-family: 'Tiro Bangla';
+    text-align: center;
+    padding: 20px 0;
+    margin: 30px;
+    margin-bottom: 30px;
+}
+
+.servicios .galeria .servicio:hover {
+    box-shadow: 0px 0px 40px rgb(7, 3, 0);
 }
