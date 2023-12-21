@@ -72,7 +72,7 @@ html {
 }
 
 .Inicio {
-    background: url(../img/rojo2.jpg) no-repeat center center;
+    background: url(../img/rojo2.webp) no-repeat center center;
     background-size: cover;
     height: 100vh;
     color: #050101;
@@ -117,7 +117,7 @@ html {
 }
 
 .separador{
-    background: url(../img/separador.png) no-repeat center center;
+    background: url(../img/separador.webp) no-repeat center center;
     background-size: cover;
     height: 2vh;
     color: #050101;
@@ -136,7 +136,7 @@ html {
 .servicios .contenedor-servicios {
     max-width: 100%;
     margin: auto;
-    background:  url(../img/blanco.jpg) no-repeat center center;
+    background:  url(../img/blanco.webp) no-repeat center center;
     background-size: cover;
 }
 
@@ -159,7 +159,7 @@ html {
     position: relative;
     max-width: 370px;
     height: 420px;
-    margin: 10px;
+    margin: 9px;
     cursor: pointer;
     background: rgb(245, 239, 219, 1);
 }
@@ -189,4 +189,287 @@ html {
 
 .servicios .galeria .servicio:hover {
     box-shadow: 0px 0px 40px rgb(7, 3, 0);
+}
+
+.contenedor-carrusel {
+    background: url(../img/verde.webp) no-repeat center center #cfd8dc;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.contenedor-carrusel h2 {
+    font-size: 48px;
+    font-family: 'Kiwi Maru';
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.contenedor-carrusel .carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor-carrusel .carrusel .atras{
+    background: #FAFAD2;
+    border-radius: 15px;
+}
+.contenedor-carrusel .carrusel .adelante{
+    background: #FAFAD2;
+    border-radius: 15px;
+}
+
+.contenedor-carrusel .imagenes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.contenedor-carrusel img {
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.85);
+    width: 100%; /* La imagen se escalará con el ancho del contenedor */
+    max-width: 100%; /* La imagen nunca superará el ancho del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+    border-radius: 15px;
+    margin: 3px;
+    object-fit: contain; 
+}
+.contenedor-carrusel .carrusel img {
+    max-height: 60vh; /* Por ejemplo, la imagen no superará el 80% de la altura de la ventana */
+}
+
+.contenedor-carrusel .texto {
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: 9px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(63, 106, 138, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.contenedor-carrusel .texto h3 {
+    text-shadow: 0px 0px 15px black;
+    padding-top: 40px;
+    color: white;
+    font-weight: 300;
+    font-size: 27px;
+}
+
+.contenedor-carrusel .texto p {
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 0px;
+    font-weight: 300;
+}
+
+.contenedor-carrusel .imagenes .texto {
+    width: 600px;
+    height: 100px;
+    transition: 1s;
+}
+
+@media screen and (min-width: 951px) {
+
+    /* Estilos específicos para pantallas más grandes */
+    .contenedor-carrusel .imagenes:hover .texto {
+        transition: height 1s, transform 1s, background-color 1s;
+        transform: translateY(-150px);
+        height: 300px;
+        background-color: rgba(63, 106, 138, 0.71);
+    }
+
+    .contenedor-carrusel .imagenes:hover .texto p {
+        transition: font-size 0s .2s linear;
+        font-size: 23px;
+        font-weight: 300;
+        text-shadow: 0px 0px 10px #000000;
+    }
+}
+
+.contenedor-carrusel h2 {
+    font-size: 48px;
+    font-family: 'Kiwi Maru';
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.puntos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos p {
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -50px;
+    color: black;
+    opacity: 1;
+}
+
+.puntos .bold {
+    font-weight: 700;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #5E17EB;
+}
+
+@media (max-width: 450px) {
+    .puntos p {
+        opacity: 0; /* Los puntos se vuelven completamente transparentes */
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+
+.navidad{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    margin: auto;
+    background: url(../img/rojo1.webp) no-repeat center center #cfd8dc;
+    background-size: cover;
+}  
+
+.boton-contenedor {
+    text-align: center;
+    
+}
+
+.boton-navideno {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 20px 40px; /* Aumentado para hacer el botón más grande */
+    font-size: 24px; /* Tamaño de letra más grande */
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.boton-navideno i{
+    margin-right: 10px;
+
+}
+
+
+.boton-navideno:hover {
+    background-color: green;
+    box-shadow: 0 0 25px white;
+}
+
+@media screen and (max-width:950px) {
+    nav {
+        display: none;
+    }
+
+    .contenedor-header .logo {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+        float: right;
+    }
+
+    .contenedor-header header {
+        flex-direction: row-reverse;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: rgba(245, 245, 220, 1);
+        width: 220px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+
+    #no-hover {
+        color: #000000;
+        text-decoration: none;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-responsive {
+        background-color: #252A2E;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .Inicio {
+        width: auto;
+    }
+
+    .Inicio .contenedor-banner{
+        max-width: 400px;
+    }
+
+    .Inicio .contenedor-banner .col h4 {
+        font-size: 20px;
+        font-weight: normal;
+        margin: auto;
+    }
+
+    .info {
+        width: 300px;
+    }
+
 }
