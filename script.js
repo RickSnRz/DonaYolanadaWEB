@@ -72,7 +72,7 @@ enlaces.forEach(function (enlace) {
     let plataforma = enlace.id.toLowerCase();
     let urls = {
       facebook: "https://www.facebook.com/donayolandape",
-      whatsapp: "https://wa.me/message/VUOPFESE5UY7K1",
+      whatsapp: "https://wa.me/message/BRD2NANMTAACH1",
       instagram: "https://www.instagram.com/donayolandaperu/",
     };
     if (plataforma in urls) {
